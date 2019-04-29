@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>eventos</title>
+
+	<script>
+imagem1 = new Image();
+imagem1.src = "janelafechada.jpg";
+        
+imagem1on = new Image();
+imagem1on.src = "janelaaberta.jpg";
+        
+imagem1click = new Image();
+imagem1onclick.src = "janelaquebrada.jpg";
+
+function Ativo1(imagem)
+{
+if (document.images) document[imagem].src = eval(imagem + "on.src");
+}
+
+function Desativo1(imagem)
+{
+if (document.images) document[imagem].src = eval(imagem + ".src");
+}
+        
+function Onclick(imagem)
+{
+if (document.images) document[imagem].src = eval(imagem + "onclick.src");
+}      
+        
+</script>
+
+</head>
+
+	<body>
+<a href="#" onmouseover="Ativo1('imagem1')" onMouseOut="Desativo1('imagem1')" onclick="Onclick('imagem1')">
+<img name="imagem1" src="janelafechada.jpg" border="0">
+    <figcaption>Abra a Janela</figcaption>
+    
+    
+    
+</a>
+</body>
+
+</html>

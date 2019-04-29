@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teste</title>
+    <script>
+        function maiuscula() {
+        document.getElementById("texto").value =
+        document.getElementById("texto").value.toUpperCase()
+        document.forms.teste.opcao1.checked = true;
+        document.form.test.opcao2.checket = false;
+        };
+        
+        function minuscula() {
+        document. forms.teste.texto.value =
+        document.forms.teste.texto.value.toLowerCase();
+        document.teste.opcao2.checked = true;
+        document.test.opcao1.checket = false;
+        
+        };
+        
+        </script>
+                
+    </head>
+<body>
+    
+    <form name="teste">
+        Digite o Texto: 
+        <input type="text" id="texto" name="texto" size=20
+               maxlength="20">
+        <br> Maiusculas
+        <input type="checkbox" id="opcao1" name="opcao1" value="1"
+               onClick="maiuscula();">
+        <br> Minusculas
+        <input type="checkbox" id="opcao2" name="opcao2" value="2"
+               onClick="minuscula();">
+    
+    </form>
+ 
+   </body>
